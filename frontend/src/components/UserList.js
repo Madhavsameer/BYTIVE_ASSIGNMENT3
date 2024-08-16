@@ -9,7 +9,7 @@ const UserList = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('https://bytive-assignment3-1kcr.onrender.com/')
+    axios.get('https://bytive-assignment3-1kcr.onrender.com/users')
       .then(response => setUsers(response.data))
       .catch(error => console.error('Error fetching the users:', error));
       setTimeout(() => {
